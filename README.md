@@ -8,6 +8,8 @@ Crystallize and reuse agent actions by preserving agent produced disposable scri
 npx skills add https://github.com/pfcoperez/scriptify
 ```
 
+Or just ask your agent to install it.
+
 ## Prerequisites
 
 - An AI coding agent with [npx skills](https://www.npmjs.com/package/skills) support
