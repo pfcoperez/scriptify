@@ -1,6 +1,6 @@
 ---
 name: scriptify
-description: Use after composing a non-trivial script (shell, Python, SQL, etc.) while completing a task, to offer saving it as a reusable, parameterized script outside the session.
+description: PROACTIVELY triggered after composing a non-trivial script (shell, Python, SQL, etc.) while completing a task, to offer saving it as a reusable, parameterized script outside the session.
 allowed-tools: Write, Edit, Bash(chmod +x:*), AskUserQuestion
 ---
 
@@ -8,16 +8,15 @@ Goal: offer to save the disposable scripts composed by the agent so they can be 
 
 AI agents create scripts to answer the user queries. These are usually cleaned up after the session is over. This skill proposes to the user saving these disposable scripts for future reuse.
 
-# Manual invocation
+# Operation
 
-When the user invokes this skill directly (e.g. `/scriptify`), review the scripts composed earlier in the session, apply the promotion rules below to each of them, and propose the ones that qualify. If none qualify, say so briefly.
-
-# Suggestion format
+When this skills is invoked either proactively by the agent or manually by the user (`/scriptify`), review the scripts composed in the session, apply the promotion rules below to each of them, and propose the ones that qualify. If none qualify, say so briefly.
 
 Suggestions to promote ephemeral scripts should be proposed at the end of the agent response that generated or used the disposable script, never in the middle of a task.
 
+# Suggestion format
+
 - If several scripts qualify, propose them together in a single suggestion.
-- If no user can answer (non-interactive or headless runs, subagents), propose on the coordinating agent after the activity.
 
 The suggestion names the script and shows how it would be called:
 
