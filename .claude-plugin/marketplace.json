@@ -1,0 +1,15 @@
+{
+  "name": "scriptify",
+  "description": "Scriptify: save agent-composed disposable scripts for reuse.",
+  "owner": {
+    "name": "Pablo Francisco Pérez Hidalgo",
+    "email": "contact@pablofranciscoperez.info"
+  },
+  "plugins": [
+    {
+      "name": "scriptify",
+      "source": "./",
+      "description": "Offer to save disposable scripts composed by the agent as reusable, parameterized scripts."
+    }
+  ]
+}

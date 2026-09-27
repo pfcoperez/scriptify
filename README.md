@@ -10,6 +10,15 @@ npx skills add https://github.com/pfcoperez/scriptify
 
 Or just ask your agent to install it.
 
+### As a Claude Code plugin
+
+```
+/plugin marketplace add pfcoperez/scriptify
+/plugin install scriptify@scriptify
+```
+
+The plugin bundles the skill and a Stop hook that makes it trigger reliably (see below). The hook requires `python3`.
+
 ## Prerequisites
 
 - An AI coding agent with [npx skills](https://www.npmjs.com/package/skills) support
@@ -24,7 +33,7 @@ To make it apply consistently, add a line like this to your `CLAUDE.md` or `AGEN
 After writing a non-trivial script, apply the scriptify skill.
 ```
 
-In Claude Code you can also use a [Stop hook](https://docs.claude.com/en/docs/claude-code/hooks) to remind the agent at the end of each turn.
+In Claude Code, installing it as a plugin does this for you: its [Stop hook](https://docs.claude.com/en/docs/claude-code/hooks) checks each finished turn for composed scripts (multi-line or heredoc shell commands, inline interpreters, written script files) and, if it finds any, asks the agent to apply the skill before stopping. Turns without scripts are not affected.
 
 ## Usage
 
