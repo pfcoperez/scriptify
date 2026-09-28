@@ -27,12 +27,6 @@ reinventing the wheel.
 
 ## Installation
 
-```bash
-npx skills add https://github.com/pfcoperez/scriptify
-```
-
-Or just ask your agent to install it.
-
 ### As a Claude Code plugin
 
 ```
@@ -41,6 +35,14 @@ Or just ask your agent to install it.
 ```
 
 The plugin bundles the skill and a Stop hook that makes it trigger reliably (see below). The hook requires `python3`.
+
+### For other agents
+
+```bash
+npx skills add https://github.com/pfcoperez/scriptify
+```
+
+Or just ask your agent to install it.
 
 ## Prerequisites
 
