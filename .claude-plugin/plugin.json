@@ -6,6 +6,7 @@
     "name": "Pablo Francisco Pérez Hidalgo",
     "email": "contact@pablofranciscoperez.info"
   },
+  "supportUrl": "https://github.com/pfcoperez/scriptify/blob/main/README.md",
   "repository": "https://github.com/pfcoperez/scriptify",
   "license": "Apache-2.0"
 }
