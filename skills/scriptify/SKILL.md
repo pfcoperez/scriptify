@@ -10,7 +10,7 @@ AI agents create scripts to answer the user queries. These are usually cleaned u
 
 # Operation
 
-When this skills is invoked either proactively by the agent or manually by the user (`/scriptify`), review the scripts composed in the session, apply the promotion rules below to each of them, and propose the ones that qualify. If none qualify, say so briefly.
+When this skills is invoked either proactively by the agent or manually by the user (`/scriptify` or `/scriptomatic`), review the scripts composed in the session, apply the promotion rules below to each of them, and propose the ones that qualify. If none qualify, say so briefly.
 
 Suggestions to promote ephemeral scripts should be proposed at the end of the agent response that generated or used the disposable script, never in the middle of a task.
 
