@@ -1,6 +1,6 @@
 {
   "name": "scriptomatic",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Offer to save disposable scripts composed by the agent as reusable, parameterized scripts.",
   "author": {
     "name": "Pablo Francisco Pérez Hidalgo",
